@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cotiza tu evento - Logística Fénix</title>
+    <link rel="stylesheet" href="../frontend/estilosCotizacion.css" />
+
+</head>
+    <body>
+
+        <h1>Solicita tu cotización</h1>
+
+        <form action="#" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="servicio">Tipo de servicio:</label>
+            <select id="servicio" name="servicio" required>
+            <option value="">-- Selecciona --</option>
+            <option value="Montaje de eventos">Montaje de boda</option>
+            <option value="Cumpleaños">Cumpeaños</option>
+            <option value="Logística de junta">Logística de junta</option>
+            <option value="Otros">Otros</option>
+            </select>
+
+            <label for="cantidad">Cantidad aproximada de personas:</label>
+            <input type="number" id="cantidad" name="cantidad" required min="1">
+
+            <label for="cantidad">Cantidad de sillas:</label>
+            <input type="number" id="cantidad" name="cantidad" required min="1">            
+
+            <label for="cantidad">Cantidad de mesas:</label>
+            <input type="number" id="cantidad" name="cantidad" required min="1">
+
+            <label for="cantidad">Cantidad de manteles:</label>
+            <input type="number" id="cantidad" name="cantidad" required min="1">
+
+            <label for="fecha">Fecha del evento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="comentarios">Comentarios u observaciones:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <input type="submit" value="Enviar cotización">
+        </form>
+
+        <div class="back-link">
+            <p><a href="../index.html">← Volver a la página principal</a></p>
+        </div>
+
+    </body>
+</html>

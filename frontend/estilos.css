@@ -2,7 +2,7 @@
 :root {
     --negro: #0f0f0f;
     --blanco: #ffffff;
-    --dorado: #d4af37;
+    --dorado: gold;
   }
   
   * {
@@ -110,7 +110,7 @@
   }
   
   button:hover {
-    background-color: #bfa032;
+    background-color: gold;
   }
   
   footer {
