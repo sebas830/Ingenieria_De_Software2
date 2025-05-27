@@ -1,128 +1,154 @@
-/* Colores */
-:root {
-    --negro: #0f0f0f;
-    --blanco: #ffffff;
-    --dorado: gold;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--negro);
-    color: var(--blanco);
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: var(--negro);
-    color: var(--dorado);
-    padding: 1.5rem;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  nav a {
-    color: var(--blanco);
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: var(--dorado);
-  }
-  
-  .seccion {
-    padding: 3rem 1.5rem;
-    text-align: center;
-  }
-  
-  h2 {
-    color: var(--dorado);
-    margin-bottom: 1rem;
-  }
-  
-  .lista-servicios {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .lista-servicios li {
-    margin: 0.5rem 0;
-  }
-  
-  .galeria {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .imagen {
-    background-color: #1a1a1a;
-    padding: 2rem;
-    border: 1px solid var(--dorado);
-    width: 200px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dorado);
-    font-weight: bold;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  input, textarea {
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: var(--dorado);
-    color: var(--negro);
-    border: none;
-    padding: 0.75rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background-color: gold;
-  }
-  
-  footer {
-    background-color: #111;
-    text-align: center;
-    padding: 1rem;
-    color: #aaa;
-  }
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
 
-  .redes a { 
-    margin-right: 10px;
-    font-size: 34px; 
-    text-decoration: none; 
-}
-  
+    body {
+      background-color: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid gold;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: gold;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 2rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: url("https://images.unsplash.com/photo-1556761175-4b46a572b786") no-repeat center/cover;
+      position: relative;
+      min-height: 80vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: gold;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.8rem 1.5rem;
+      background-color: gold;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e6b800;
+    }
+
+    h2 {
+      color: gold;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background-color: #111;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #333;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-left: 4px solid gold;
+      border-radius: 5px;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }

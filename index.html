@@ -9,68 +9,91 @@
 </head>
 
   <body>
-    <header>
-      <h1>Fénix Logística</h1>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="src/cotizaciones.html">Cotizacion</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <section id="inicio" class="seccion">
-      <h2>Bienvenidos a Fénix Logística</h2>
-      <p>Organizamos tus eventos con excelencia, precisión y elegancia.</p>
-    </section>
+  <header>
+    <div class="logo">Logística Fénix</div>
+    <nav>
+      <a href="#inicion">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobrenosotros">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="src/cotizaciones.html">Cotizacion</a>
+    </nav>
+  </header>
 
-    <section id="servicios" class="seccion">
-      <h2>Servicios</h2>
-      <ul class="lista-servicios">
-        <li>Planificación de eventos corporativos</li>
-        <li>Logística de bodas y celebraciones</li>
-        <li>Gestión de proveedores y locaciones</li>
-        <li>Coordinación de montaje y desmontaje</li>
-      </ul>
-    </section>
+  <section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Tu socio en eventos y logística</h1>
+      <p>Soluciones confiables, ágiles y profesionales para hacer realidad cualquier evento.</p>
+      <a href="#contacto"><button class="btn">Contáctanos</button></a>
+      <a href="src/cotizaciones.html"><button class="btn">Solicita tu cotización</button></a>
 
-    <section id="sobre-nosotros" class="seccion">
-      <h2>Sobre Nosotros</h2>
-      <p>Somos una empresa con pasión por los detalles y el compromiso. Desde el primer contacto hasta el último aplauso, nos encargamos de que todo salga perfecto.</p>
-    </section>
+    </div>
+  </section>
 
-    <section id="galeria" class="seccion">
-      <h2>Galería</h2>
-      <div class="galeria">
-        <div class="imagen"> <img width="195px" src="frontend/assets/logo.img.jpg" ></div>
-        <div class="imagen"><img width="195px" src="frontend/assets/equipo.img.jpg" ></div>
-        <div class="imagen">📸 Evento 3</div>
+  <section id="servicios" data-aos="fade-up">
+    <h2>Servicios</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Montaje de Eventos</h3>
+        <p>Infraestructura profesional para ferias, conciertos, congresos y más.</p>
       </div>
-    </section>
-
-    <section id="contacto" class="seccion">
-      <h2>Contacto</h2>
-      <p>¿Listo para tu próximo gran evento? Contáctanos:</p>
-      <form>
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Correo" required />
-        <textarea placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-
-    <footer>
-      <div class="redes">
-          <a href="https://wa.me/573215020516" target="_blank"><i class="fab fa-whatsapp" style="color:green;"></i></a>
-          <a href="https://instagram.com/tuempresa" target="_blank"><i class="fab fa-instagram" style="color:purple;"></i></a>
-          <a href="https://facebook.com/tuempresa" target="_blank"><i class="fab fa-facebook" style="color:blue;"></i></a>
-          <a href="https://www.google.com/maps/place/Tu+Dirección+Aquí" target="_blank"><i class="fas fa-map-marker-alt" style="color:red;"></i></a>
+      <div class="card">
+        <h3>Logística de Personal</h3>
+        <p>Coordinamos talento humano para cada fase del evento.</p>
       </div>
-      <p>&copy; 2025 Fénix Logística. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+      <div class="card">
+        <h3>Transporte y Equipos</h3>
+        <p>Movilizamos lo necesario con seguridad y puntualidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" data-aos="fade-up">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Experiencia</h3>
+        <p>Más de 10 años haciendo posible lo imposible en eventos.</p>
+      </div>
+      <div class="card">
+        <h3>Precisión</h3>
+        <p>Cumplimos con tiempos y estándares exigentes.</p>
+      </div>
+      <div class="card">
+        <h3>Soporte 24/7</h3>
+        <p>Atención permanente para cada cliente y situación.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" data-aos="fade-up">
+    <h2>Testimonios</h2>
+    <div class="grid">
+      <div class="testimonial">
+        “Gracias a Fénix nuestro evento fue un éxito total. Profesionales y confiables.”
+        <br><br>— Juan López, Organizador de ExpoEventos
+      </div>
+      <div class="testimonial">
+        “La mejor empresa de logística con la que he trabajado en Colombia.”
+        <br><br>— María Camargo, Producción Creativa
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <p style="text-align: center;">Escríbenos al correo: <strong>contacto@logisticafenix.com</strong> o vía WhatsApp al <strong>+57 312 345 6789</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Logística Fénix - Todos los derechos reservados
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
