@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tarjetas con Zoom Completo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(194, 20, 20, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 15px 0 5px;
+    }
+
+    .card p {
+      padding: 0 10px 15px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Nuestros Servicios</h1>
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150" alt="Imagen 1" />
+      <h3>Evento Corporativo</h3>
+      <p>Organización completa de eventos empresariales y ferias.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150" alt="Imagen 2" />
+      <h3>Logística Técnica</h3>
+      <p>Montaje de sonido, luces, tarimas y pantallas LED.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150" alt="Imagen 3" />
+      <h3>Producción Audiovisual</h3>
+      <p>Cubrimiento profesional con cámaras, drones y edición.</p>
+    </div>
+  </div>
+</body>
+</html>
 

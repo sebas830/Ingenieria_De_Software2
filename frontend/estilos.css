@@ -59,7 +59,8 @@ h2 {
 .hero {
   background: url("https://images.unsplash.com/photo-1556761175-4b46a572b786") no-repeat center/cover;
   position: relative;
-  min-height: 80vh;
+  min-height: 90vh;
+  min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +93,7 @@ h2 {
 
 /* BOTÓN */
 .btn {
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 5.5rem;
   background-color: gold;
   color: black;
   border: none;
@@ -110,23 +111,28 @@ h2 {
 .grid {
   display: grid;
   gap: 2rem;
+  overflow: visible; /* permite agrandar tarjetas sin cortar */
 }
 
 .grid-3 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-/* TARJETAS */
-.card {
+/* TARJETAS GENERALES */
+.card, .service-card {
   background-color: #111;
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid #333;
-  transition: transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.card:hover, .service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3); /* resplandor dorado */
+  z-index: 1;
 }
 
 /* FOOTER */
@@ -150,8 +156,8 @@ footer {
 }
 
 .icono {
-  width: 90px;
-  height: 90px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #1a1a1a;
   display: flex;
@@ -162,8 +168,8 @@ footer {
 }
 
 .icono img {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   filter: invert(69%) sepia(82%) saturate(528%) hue-rotate(3deg) brightness(96%) contrast(92%);
 }
 
@@ -183,24 +189,18 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-}
-
-.service-card {
-  background: #111;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
+  overflow: visible; /* permite agrandar tarjetas sin cortar */
 }
 
 .service-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
 }
 
 .service-content {
@@ -254,6 +254,8 @@ footer {
   .service-card img {
     height: 160px;
   }
-
 }
+
+
+
 
