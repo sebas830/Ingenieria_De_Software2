@@ -105,3 +105,6 @@ Se permite solo para uso educativo. No puede ser vendido; sin embargo, puede ser
 
 📧 **mariaalejandrareina122@gmail.com**  
 🐙 GitHub: [@Mari-R122](https://github.com/Mari-R122)
+
+📧 **Deivychirs098@gmail.com**  
+🐙 GitHub: [@Deivy095](https://github.com/Deivy095)
