@@ -278,6 +278,24 @@ footer {
     max-width: 300px;
     padding: 0.8rem 1rem;
   }
+    .redes {
+    display: flex;
+    flex-wrap: nowrap; /* fuerza una sola fila */
+    justify-content: center;
+    gap: 15px;
+    padding: 1rem 0;
+  }
+
+  .icono {
+    width: 45px;
+    height: 45px;
+    flex: 0 0 auto;
+  }
+
+  .icono img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 
